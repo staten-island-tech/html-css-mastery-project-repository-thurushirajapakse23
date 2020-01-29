@@ -1,0 +1,37 @@
+.pantheon{
+    height: auto;
+    width: 6rem;
+    position: absolute;
+}
+
+
+.pantheon-gallery{
+    position: relative;
+    margin: 2rem;
+}
+.ceiling{
+    z-index: 1;
+    top: 3rem;
+}
+.floor{
+    top: 8rem;
+    left: 28rem;
+    z-index: 3;
+}
+.outside{
+    top: 19rem;
+    left: 8rem;
+    z-index: 2;
+}
+
+.pantheon:hover{
+    transform: scale(1.1);
+    outline: .5rem solid black;
+    z-index: 4;
+    outline-offset: .7rem;
+}
+
+.pantheon-gallery:hover .pantheon:not(:hover){
+    transform: scale(.8);
+    opacity: 0.5;
+}
