@@ -1,40 +1,3 @@
-.nav-parent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: lightcoral;
-  color: white;
-}
-
-.nav-child {
-  margin: 1rem;
-}
-
-#nav-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-li {
-  padding: 1rem;
-  list-style-type: none;
-}
-
 .header-image {
   height: auto;
   width: 100%;
@@ -56,7 +19,6 @@ li {
 }
 
 .header-text-para {
-  margin: 1rem;
   font-size: 1rem;
 }
 
@@ -67,38 +29,38 @@ li {
 
 .pantheon {
   height: auto;
-  width: 6rem;
+  width: 12rem;
   position: absolute;
 }
 
 .pantheon-gallery {
   position: relative;
-  margin: 2rem;
 }
 
 .ceiling {
-  z-index: 1;
-  top: 3rem;
+  z-index: 3;
+  top: -1rem;
+  left: .5rem;
 }
 
 .floor {
-  top: 8rem;
-  left: 28rem;
-  z-index: 3;
+  top: 9rem;
+  left: .5rem;
+  z-index: 1;
 }
 
 .outside {
-  top: 19rem;
-  left: 8rem;
+  top: 4rem;
+  left: 11rem;
   z-index: 2;
 }
 
 .pantheon:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
   outline: .5rem solid black;
   z-index: 4;
-  outline-offset: .7rem;
+  outline-offset: .2rem;
 }
 
 .pantheon-gallery:hover .pantheon:not(:hover) {
@@ -114,6 +76,5 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #c9cdcd;
-  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

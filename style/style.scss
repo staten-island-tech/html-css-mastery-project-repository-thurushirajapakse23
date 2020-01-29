@@ -1,5 +1,4 @@
 @import "./variables";
-@import "./nav";
 @import "./header";
 @import "./pantheon";
 
@@ -9,29 +8,4 @@ body{
     font-size: 62.5%;
     box-sizing: border-box;
     background-color: color(primary);
-    overflow: hidden;
-}
-
-$desktop: 1100px;
-$laptop: 900px;
-$tablet: 600px;
-
-@function color($color-name) {
-  @return map-get($colors, $color-name);
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop}) {
-    @content;
-  }
-}
-@mixin laptop {
-  @media (min-width: #{$laptop}) {
-    @content;
-  }
-}
-@mixin tablet {
-  @media (min-width: #{$tablet}) {
-    @content;
-  }
 }

@@ -1,34 +1,33 @@
 .pantheon{
     height: auto;
-    width: 6rem;
+    width: 12rem;
     position: absolute;
 }
 
-
 .pantheon-gallery{
     position: relative;
-    margin: 2rem;
 }
 .ceiling{
-    z-index: 1;
-    top: 3rem;
+    z-index: 3;
+    top: -1rem;
+    left: .5rem;
 }
 .floor{
-    top: 8rem;
-    left: 28rem;
-    z-index: 3;
+    top: 9rem;
+    left: .5rem;
+    z-index: 1;
 }
 .outside{
-    top: 19rem;
-    left: 8rem;
+    top: 4rem;
+    left: 11rem;
     z-index: 2;
 }
 
 .pantheon:hover{
-    transform: scale(1.1);
+    transform: scale(.9);
     outline: .5rem solid black;
     z-index: 4;
-    outline-offset: .7rem;
+    outline-offset: .2rem;
 }
 
 .pantheon-gallery:hover .pantheon:not(:hover){
