@@ -19,17 +19,17 @@
 }
 
 .header-text-para {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .header-text-title {
-  font-size: 2rem;
+  font-size: 4rem;
   background-color: #bdd5da;
 }
 
 .pantheon {
   height: auto;
-  width: 12rem;
+  width: 20rem;
   position: absolute;
 }
 
@@ -39,28 +39,21 @@
 
 .ceiling {
   z-index: 3;
-  top: -1rem;
-  left: .5rem;
 }
 
 .floor {
-  top: 9rem;
-  left: .5rem;
   z-index: 1;
+  top: 16rem;
 }
 
 .outside {
-  top: 4rem;
-  left: 11rem;
+  top: 7rem;
+  left: 16rem;
   z-index: 2;
 }
 
 .pantheon:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  outline: .5rem solid black;
-  z-index: 4;
-  outline-offset: .2rem;
+  z-index: 3;
 }
 
 .pantheon-gallery:hover .pantheon:not(:hover) {
@@ -69,7 +62,7 @@
   opacity: 0.5;
 }
 
-body {
+html {
   padding: 0;
   margin: 0;
   font-size: 62.5%;
