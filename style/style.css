@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-.header-text {
+.text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,13 +18,27 @@
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-.header-text-para {
+.text-para {
   font-size: 2rem;
 }
 
-.header-text-title {
+.text-title {
   font-size: 4rem;
   background-color: #bdd5da;
+}
+
+.header-parent {
+  position: relative;
+}
+
+.header-title {
+  position: absolute;
+  top: 62%;
+  font-size: 4rem;
+  color: white;
+  left: 30%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 1rem;
 }
 
 .pantheon {
@@ -69,5 +83,10 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #c9cdcd;
+}
+
+body {
+  padding: 0;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,7 +5,7 @@
     width: 100%;
 }
 
-.header-text{
+.text{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -13,11 +13,28 @@
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-.header-text-para{
+.text-para{
     font-size: 2rem;
 }
 
-.header-text-title{
+.text-title{
     font-size: 4rem;
     background-color: color(secondary);
 }
+
+.header-parent{
+    position: relative;
+}
+.header-title{
+    position: absolute;
+    top: 62%;
+    font-size: 4rem;
+    color: white;
+    left: 30%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1rem;
+
+}
+
+
+
