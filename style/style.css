@@ -1,4 +1,4 @@
-.header-image {
+header-image {
   height: auto;
   width: 100%;
 }
@@ -29,6 +29,8 @@
 
 .header-parent {
   position: relative;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(254, 171, 94, 0.726)), color-stop(rgba(199, 121, 208, 0.726)), to(rgba(75, 192, 200, 0.726))), url("../");
+  background-image: linear-gradient(to right bottom, rgba(254, 171, 94, 0.726), rgba(199, 121, 208, 0.726), rgba(75, 192, 200, 0.726)), url("../");
 }
 
 .header-title {
