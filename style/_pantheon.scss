@@ -25,7 +25,20 @@
  
 }
 
+.pantheon-parent{
+    position: relative
+}
 .pantheon-gallery:hover .pantheon:not(:hover){
     transform: scale(.8);
     opacity: 0.5;
+}
+
+.pantheon-text{
+    font-family: 'Six Caps', sans-serif;font-size: 4rem;
+    position: absolute;
+    left: 106%;
+    text-align: center;
+    top: -13rem;
+    letter-spacing: .2rem;
+
 }

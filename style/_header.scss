@@ -19,28 +19,40 @@ header-image{
 }
 
 .text-title{
-    font-size: 4rem;
+    font-size: 7rem;
     background-color: color(secondary);
 }
 
 .header-parent{
-    position: relative;
-    background-image: linear-gradient(to right bottom,
-    rgba(254, 171, 94, 0.726),
-    rgba(199, 121, 208, 0.726),
-    rgba(75, 192, 200, 0.726)), 
-    url("../");
-}
-.header-title{
-    position: absolute;
-    top: 62%;
-    font-size: 4rem;
-    color: white;
-    left: 30%;
+background-image: linear-gradient(to right bottom,
+/* rgba(201, 205, 205, 0.534), */
+rgba(213, 159, 101, 0.486)),
+    url(../media/fountain.jpeg);
+    background-size: cover;
+    opacity: 85%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    clip-path: polygon(49% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+    color: black;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    letter-spacing: 1rem;
-
+    
 }
 
+.header-title{
+    font-size: 6rem;
+    letter-spacing: 1rem;
+}
 
+.header-subtitle{
+    font-size: 2rem;
+    font-family: 'Marck Script', cursive;
+    font-weight: bold;
+}
 
