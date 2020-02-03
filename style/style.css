@@ -47,9 +47,9 @@ header-image {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  /*     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; */
   -webkit-clip-path: polygon(49% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
           clip-path: polygon(49% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
   color: black;
