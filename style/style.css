@@ -28,11 +28,11 @@ header-image {
 }
 
 .header-parent {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(213, 159, 101, 0.486))), url(../media/fountain.jpeg);
-  background-image: linear-gradient(to right bottom, rgba(213, 159, 101, 0.486)), url(../media/fountain.jpeg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(213, 159, 101, 0.486))), url(../media/fountain.jpg);
+  background-image: linear-gradient(to right bottom, rgba(213, 159, 101, 0.486)), url(../media/fountain.jpg);
   background-size: cover;
   opacity: 85%;
-  height: 100%;
+  height: 100vh;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,13 +47,19 @@ header-image {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /*     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   -webkit-clip-path: polygon(49% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
           clip-path: polygon(49% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
   color: black;
   font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+@media (min-width: 600px) {
+  .header-parent {
+    height: 45%;
+  }
 }
 
 .header-title {
