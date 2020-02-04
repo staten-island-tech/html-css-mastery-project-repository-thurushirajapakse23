@@ -2,6 +2,9 @@
     height: auto;
     width: 20rem;
     position: absolute;
+    @include tablet{
+        width: 36rem;
+    }
 }
 
 .pantheon-gallery{
@@ -9,15 +12,27 @@
 }
 .ceiling{
     z-index: 3;
+    @include tablet{
+        top: -4rem;
+        left: 4rem;
+    }
 }
 .floor{
     z-index: 1;
     top: 16rem;
+    @include tablet{
+        top: 25rem;
+        left: 4rem;
+    }
 }
 .outside{
     top: 7rem;
     left: 16rem;
     z-index: 2;
+    @include tablet{
+        left: 34rem;
+        top: 8rem;
+    }
 }
 
 .pantheon:hover{
@@ -36,13 +51,18 @@
 .pantheon-text{
     font-family: 'Six Caps', sans-serif;font-size: 4rem;
     position: absolute;
-    left: 104%;
+    left: 20rem;
     text-align: center;
     top: -9rem;
-    letter-spacing: .2rem;
+    width: 16rem;
     line-height: 0.8;
     letter-spacing: 0.5rem;
-    font-weight: 600;
     font-size: 4rem;
+    @include tablet{
+        left: 41rem;
+        top: -13rem;
+        font-size: 5.5rem;
+        width: 28rem;
+    }
 
 }

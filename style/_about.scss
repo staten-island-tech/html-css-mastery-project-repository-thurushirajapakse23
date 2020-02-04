@@ -1,0 +1,24 @@
+@import "./variables";
+
+.text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.text-para{
+    font-size: 2rem;
+    @include desktop{
+        font-size: 3rem;
+    }
+    @include tablet{
+        font-size: 2.2rem;
+    }
+}
+
+.text-title{
+    font-size: 7rem;
+    background-color: color(secondary);
+}

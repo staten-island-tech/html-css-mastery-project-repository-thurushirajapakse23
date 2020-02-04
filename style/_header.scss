@@ -6,26 +6,8 @@ header-image{
     width: 100%;
 }
 
-.text{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-
-.text-para{
-    font-size: 2rem;
-}
-
-.text-title{
-    font-size: 7rem;
-    background-color: color(secondary);
-}
-
 .header-parent{
 background-image: linear-gradient(to right bottom,
-/* rgba(201, 205, 205, 0.534), */
 rgba(213, 159, 101, 0.486)),
     url(../media/fountain.jpg);
     background-size: cover;
@@ -36,16 +18,21 @@ rgba(213, 159, 101, 0.486)),
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     clip-path: polygon(49% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
     color: black;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    
     @include tablet{
-        height: 45%;
+        height: 45%; 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
+    @include desktop{
+        height: 70%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+   
 }
 
 .header-title{
