@@ -3,7 +3,10 @@
     width: 20rem;
     position: absolute;
     @include tablet{
-        width: 36rem;
+        width: 33rem;
+    }
+    @include desktop{
+        widows: 37rem;
     }
 }
 
@@ -12,32 +15,42 @@
 }
 .ceiling{
     z-index: 3;
+    top: 2rem;
     @include tablet{
-        top: -4rem;
-        left: 4rem;
+        top: 2rem;
+        left: 6rem;
+    }
+    @include desktop{
+        left: 49rem;
     }
 }
 .floor{
     z-index: 1;
     top: 16rem;
     @include tablet{
-        top: 25rem;
-        left: 4rem;
+        top: 27rem;
+        left: 6rem;
+    }
+    @include desktop{
+        top: 30rem;
+        left: 49rem;
     }
 }
 .outside{
-    top: 7rem;
+    top: 9rem;
     left: 16rem;
     z-index: 2;
     @include tablet{
-        left: 34rem;
-        top: 8rem;
+        left: 35rem;
+        top: 12rem;
+    }
+    @include desktop{
+        left: 81rem;
     }
 }
 
 .pantheon:hover{
     z-index: 3;
- 
 }
 
 .pantheon-parent{
@@ -53,16 +66,19 @@
     position: absolute;
     left: 20rem;
     text-align: center;
-    top: -9rem;
+    top: -3rem;
     width: 16rem;
     line-height: 0.8;
     letter-spacing: 0.5rem;
-    font-size: 4rem;
+    font-size: 3rem;
     @include tablet{
         left: 41rem;
-        top: -13rem;
-        font-size: 5.5rem;
+        top: -3rem;
+        font-size: 5.2rem;
         width: 28rem;
+    }
+    @include desktop{
+        left: 84rem;
     }
 
 }
