@@ -137,6 +137,8 @@ header-image {
 
 .pantheon:hover {
   z-index: 3;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .pantheon-parent {
