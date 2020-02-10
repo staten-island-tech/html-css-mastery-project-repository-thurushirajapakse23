@@ -1,4 +1,4 @@
-.pantheon{
+.panth{
     height: auto;
     width: 20rem;
     position: absolute;
@@ -10,6 +10,15 @@
     }
 }
 
+#gallery{
+    height: 40vh;
+    @include desktop{
+        height: 70vh;
+    }
+    @include tablet{
+        height: 50vh;
+    }
+}
 .pantheon-gallery{
     position: relative;
 }
