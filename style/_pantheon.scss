@@ -11,14 +11,16 @@
 }
 
 #gallery{
-    height: 65vh;
-    @include desktop{
-        height: 65vh;
-    }
+    height: 37vh;
     @include tablet{
         height: 50vh;
     }
+    @include desktop{
+        height: 65vh;
+    }
+   
 }
+
 .pantheon-gallery{
     position: relative;
 }
@@ -58,7 +60,7 @@
     }
 }
 
-.pantheon:hover{
+.panth:hover{
     z-index: 3;
     transition: .5s;
 }
@@ -66,7 +68,7 @@
 .pantheon-parent{
     position: relative
 }
-.pantheon-gallery:hover .pantheon:not(:hover){
+.pantheon-gallery:hover .panth:not(:hover){
     transform: scale(.8);
     opacity: 0.5;
 }
