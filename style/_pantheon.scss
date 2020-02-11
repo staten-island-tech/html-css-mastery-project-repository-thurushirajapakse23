@@ -11,9 +11,9 @@
 }
 
 #gallery{
-    height: 40vh;
+    height: 65vh;
     @include desktop{
-        height: 70vh;
+        height: 65vh;
     }
     @include tablet{
         height: 50vh;
