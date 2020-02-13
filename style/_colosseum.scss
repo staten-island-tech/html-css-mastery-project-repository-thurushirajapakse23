@@ -1,10 +1,10 @@
 .colosseum-image{
-    width: 85%;
+    width: 140rem;
     @include tablet{
         width: 59%;
     }
     @include desktop{
-        width: 45%;
+        width: 30%;
     }
 }
 .colosseum-parent{
@@ -18,10 +18,13 @@
 }
 .colosseum-title{
     font-size: 4rem; 
-    line-height: 5rem;
     font-family: 'Six Caps', sans-serif;
+    height: 11rem;
+    margin-top: -5rem;
     @include tablet{
-        font-size: 6rem;
+        font-size: 6rem; 
+        line-height: 5rem;
+        height: 15rem;
     }
     @include desktop{
         font-size: 6rem;
@@ -33,6 +36,7 @@
 .colosseum-text{
     display: flex;
     flex-direction: column;
+    max-width: 38rem;
     @include tablet{
         max-width: 35rem;
     }
@@ -43,7 +47,11 @@
 
 .colosseum-info{
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    @include desktop{
+    font-size: 1.3rem;
+    @include tablet{
         font-size: 2rem;
+    }
+    @include desktop{
+        font-size: 3rem;
     }
 }
