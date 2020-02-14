@@ -1,5 +1,6 @@
 .colosseum-image{
     width: 30%;
+    height: auto;
     @include tablet{
         width: 59%;
     }

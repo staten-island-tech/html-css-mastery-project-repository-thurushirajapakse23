@@ -197,6 +197,7 @@ header-image {
 
 .colosseum-image {
   width: 30%;
+  height: auto;
 }
 
 @media (min-width: 600px) {
