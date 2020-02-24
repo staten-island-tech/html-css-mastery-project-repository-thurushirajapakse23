@@ -195,11 +195,6 @@ header-image {
   }
 }
 
-.colosseum-image {
-  width: 30%;
-  height: auto;
-}
-
 @media (min-width: 600px) {
   .colosseum-image {
     width: 59%;
@@ -263,7 +258,7 @@ header-image {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 38rem;
+  max-width: 25rem;
 }
 
 @media (min-width: 600px) {

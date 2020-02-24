@@ -1,6 +1,4 @@
 .colosseum-image{
-    width: 30%;
-    height: auto;
     @include tablet{
         width: 59%;
     }
@@ -37,7 +35,7 @@
 .colosseum-text{
     display: flex;
     flex-direction: column;
-    max-width: 38rem;
+    max-width: 25rem;
     @include tablet{
         max-width: 35rem;
     }
