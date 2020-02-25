@@ -13,6 +13,7 @@
     flex-direction: row-reverse;
     text-align: center;
     width: 100%;
+    height: 25vh;
     @include desktop{
         justify-content: space-between;
     }
