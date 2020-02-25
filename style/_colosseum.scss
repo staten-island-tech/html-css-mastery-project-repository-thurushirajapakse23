@@ -16,6 +16,7 @@
     height: 25vh;
     @include desktop{
         justify-content: space-between;
+        height: none;
     }
 }
 .colosseum-title{
