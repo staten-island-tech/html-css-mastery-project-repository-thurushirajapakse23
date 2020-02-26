@@ -57,6 +57,18 @@ header-image {
   font-weight: bold;
 }
 
+.header-title:hover {
+  font-size: 7rem;
+  font-weight: bold;
+  -webkit-transition: 5sec;
+  transition: 5sec;
+}
+
+.header-title:hover > .header-subtitle {
+  -webkit-transform: translate(10px, 0);
+          transform: translate(10px, 0);
+}
+
 .panth {
   height: auto;
   width: 20rem;
@@ -230,7 +242,7 @@ header-image {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 25vh;
+    height: 45vh;
   }
 }
 
@@ -332,6 +344,38 @@ header-image {
   font-size: 7rem;
   background-color: #bdd5da;
   margin: 0;
+  border-style: double;
+  border-width: 1rem;
+  border-color: #e2ae7769;
+}
+
+.text-title {
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 html {

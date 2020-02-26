@@ -22,7 +22,29 @@
     font-size: 7rem;
     background-color: color(secondary);
     margin: 0;
+    border-style: double;
+    border-width: 1rem;
+    border-color: color(accent);
+   
 }
+
+
+.text-title{
+    animation-name: slidein;
+    animation-duration: 3s;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%; 
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 
 
