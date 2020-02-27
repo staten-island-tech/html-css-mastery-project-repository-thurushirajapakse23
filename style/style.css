@@ -60,11 +60,11 @@ header-image {
 .header-title:hover {
   font-size: 7rem;
   font-weight: bold;
-  -webkit-transition: 5sec;
-  transition: 5sec;
+  -webkit-transition: 10sec;
+  transition: 10sec;
 }
 
-.header-title:hover > .header-subtitle {
+.header-title:hover ~ .header-subtitle {
   -webkit-transform: translate(10px, 0);
           transform: translate(10px, 0);
 }
@@ -376,6 +376,163 @@ header-image {
     margin-left: 0%;
     width: 100%;
   }
+}
+
+.city-parent {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.city-box {
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.city-image :hover {
+  opacity: 0.2;
+  -webkit-transition: .5;
+  transition: .5;
+}
+
+.city-image:hover ~ .city-box {
+  opacity: 1;
+  -webkit-transition: .5;
+  transition: .5;
+}
+
+.city-text {
+  background-color: #eb93b8;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  font-family: 'Bowlby One', cursive;
+}
+
+.city-image {
+  width: auto;
+  height: 35rem;
+  z-index: 1;
+}
+
+.boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.trevi-parent {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+.trevi-box {
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.trevi-image :hover {
+  opacity: 0.2;
+  -webkit-transition: .5;
+  transition: .5;
+}
+
+.trevi-image:hover ~ .trevi-box {
+  opacity: 1;
+  -webkit-transition: .5;
+  transition: .5;
+}
+
+.trevi-text {
+  background-color: #bdd5da;
+  color: black;
+  font-size: 3rem;
+  padding: 4px 32px;
+  font-family: 'Six Caps', sans-serif;
+}
+
+.trevi-image {
+  width: auto;
+  height: 20rem;
+  z-index: 1;
+}
+
+sdg
+.vatican-parent {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+.vatican-box {
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.vatican-image :hover {
+  opacity: 0.2;
+  -webkit-transition: .5;
+  transition: .5;
+}
+
+.vatican-image:hover ~ .vatican-box {
+  opacity: 1;
+  -webkit-transition: .5;
+  transition: .5;
+}
+
+.vatican-text {
+  background-color: #bdd5da;
+  color: black;
+  font-size: 3rem;
+  padding: 4px 32px;
+  font-family: 'Six Caps', sans-serif;
+}
+
+.vatican-image {
+  width: auto;
+  height: 20rem;
+  z-index: 1;
 }
 
 html {

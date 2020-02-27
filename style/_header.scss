@@ -49,9 +49,9 @@ rgba(213, 159, 101, 0.486)),
 .header-title:hover{            
     font-size: 7rem;
     font-weight: bold;
-    transition: 5sec;
+    transition: 10sec;
 }
 
-.header-title:hover > .header-subtitle{
+.header-title:hover ~ .header-subtitle{
     transform: translate(10px,0);
 }
