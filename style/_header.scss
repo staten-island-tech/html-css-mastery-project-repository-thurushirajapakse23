@@ -52,6 +52,20 @@ rgba(213, 159, 101, 0.486)),
     transition: 10sec;
 }
 
-.header-title:hover ~ .header-subtitle{
-    transform: translate(10px,0);
+
+.header-subtitle{
+    animation-name: slidein;
+    animation-duration: 3s;
 }
+
+@keyframes slidein {
+    from {
+      margin-left: 100%; 
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }

@@ -64,9 +64,33 @@ header-image {
   transition: 10sec;
 }
 
-.header-title:hover ~ .header-subtitle {
-  -webkit-transform: translate(10px, 0);
-          transform: translate(10px, 0);
+.header-subtitle {
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .panth {
@@ -344,38 +368,14 @@ header-image {
   font-size: 7rem;
   background-color: #bdd5da;
   margin: 0;
+}
+
+.text-title:hover {
   border-style: double;
   border-width: 1rem;
   border-color: #e2ae7769;
-}
-
-.text-title {
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-}
-
-@-webkit-keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+  -webkit-transition: 10sec;
+  transition: 10sec;
 }
 
 .city-parent {
@@ -397,18 +397,6 @@ header-image {
   opacity: 0;
   position: absolute;
   z-index: 2;
-}
-
-.city-image :hover {
-  opacity: 0.2;
-  -webkit-transition: .5;
-  transition: .5;
-}
-
-.city-image:hover ~ .city-box {
-  opacity: 1;
-  -webkit-transition: .5;
-  transition: .5;
 }
 
 .city-text {
@@ -486,7 +474,6 @@ header-image {
   z-index: 1;
 }
 
-sdg
 .vatican-parent {
   position: relative;
   display: -webkit-box;
@@ -531,7 +518,7 @@ sdg
 
 .vatican-image {
   width: auto;
-  height: 20rem;
+  height: 23rem;
   z-index: 1;
 }
 
