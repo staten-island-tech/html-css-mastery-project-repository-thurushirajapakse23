@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    @include desktop{
+      flex-direction: row;
+    }
 }
 .trevi-parent{
     position: relative;
@@ -40,6 +43,9 @@
     width: auto;
     height: 20rem;
     z-index: 1;
+    @include desktop{
+      height: 29rem;
+    }
 }
 
 
@@ -80,4 +86,7 @@
     width: auto;
     height: 23rem;
     z-index: 1;
+    @include desktop{
+      height: 29rem;
+    }
 }

@@ -323,7 +323,7 @@ header-image {
 
 @media (min-width: 600px) {
   .colosseum-info {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -426,6 +426,15 @@ header-image {
           flex-direction: column;
 }
 
+@media (min-width: 1100px) {
+  .boxes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .trevi-parent {
   position: relative;
   display: -webkit-box;
@@ -474,6 +483,12 @@ header-image {
   z-index: 1;
 }
 
+@media (min-width: 1100px) {
+  .trevi-image {
+    height: 29rem;
+  }
+}
+
 .vatican-parent {
   position: relative;
   display: -webkit-box;
@@ -520,6 +535,12 @@ header-image {
   width: auto;
   height: 23rem;
   z-index: 1;
+}
+
+@media (min-width: 1100px) {
+  .vatican-image {
+    height: 29rem;
+  }
 }
 
 html {
