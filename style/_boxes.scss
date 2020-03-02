@@ -43,8 +43,11 @@
     width: auto;
     height: 20rem;
     z-index: 1;
+    @include tablet{
+      height: 30rem;
+    }
     @include desktop{
-      height: 29rem;
+      height: 30rem;
     }
 }
 
@@ -86,7 +89,101 @@
     width: auto;
     height: 23rem;
     z-index: 1;
-    @include desktop{
-      height: 29rem;
+    @include tablet{
+      height: 34rem;
     }
+    @include desktop{
+      height: 30rem;
+    }
+}
+
+
+.vatican-parent{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.vatican-box {
+    transition: .5s ;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+}
+ 
+  .vatican-image :hover {
+    opacity: 0.2;
+    transition: .5;
+  }
+  
+  .vatican-image:hover ~ .vatican-box{
+    opacity: 1;
+    transition: .5;
+  }
+  
+  .vatican-text {
+    background-color: color(secondary);
+    color: black;
+    font-size: 3rem;
+    padding: 4px 32px;
+    font-family: 'Six Caps', sans-serif; 
+  }
+  
+.vatican-image{
+    width: auto;
+    height: 23rem;
+    z-index: 1;
+    @include tablet{
+      height: 34rem;
+    }
+    @include desktop{
+      height: 30rem;
+    }
+}
+
+.peters-parent{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.peters-box {
+  transition: .5s ;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.peters-image :hover {
+  opacity: 0.2;
+  transition: .5;
+}
+
+.peters-image:hover ~ .peters-box{
+  opacity: 1;
+  transition: .5;
+}
+
+.peters-text {
+  background-color: color(secondary);
+  color: black;
+  font-size: 3rem;
+  padding: 4px 32px;
+  font-family: 'Six Caps', sans-serif; 
+}
+
+.peters-image{
+  width: auto;
+  height: 23rem;
+  z-index: 1;
+  @include tablet{
+    height: 34rem;
+  }
+  @include desktop{
+    height: 30rem;
+  }
 }
