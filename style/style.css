@@ -182,8 +182,8 @@ header-image {
 
 .panth:hover {
   z-index: 3;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 5s;
+  transition: 5s;
 }
 
 .pantheon-parent {
@@ -666,6 +666,11 @@ header-image {
   .peters-image {
     height: 30rem;
   }
+}
+
+.footer-parent {
+  background-color: #bdd5da;
+  height: 17rem;
 }
 
 html {
