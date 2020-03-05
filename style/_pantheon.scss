@@ -62,7 +62,7 @@
 
 .panth:hover{
     z-index: 3;
-    transition: 5s;
+    transition: .5s;
 }
 
 .pantheon-parent{
@@ -71,6 +71,7 @@
 .pantheon-gallery:hover .panth:not(:hover){
     transform: scale(.8);
     opacity: 0.5;
+    transition: 1s;
 }
 
 .pantheon-text{

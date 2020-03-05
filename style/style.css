@@ -182,8 +182,8 @@ header-image {
 
 .panth:hover {
   z-index: 3;
-  -webkit-transition: 5s;
-  transition: 5s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .pantheon-parent {
@@ -194,6 +194,8 @@ header-image {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
   opacity: 0.5;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .pantheon-text {
