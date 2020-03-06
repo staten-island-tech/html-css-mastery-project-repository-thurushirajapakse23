@@ -1,4 +1,35 @@
 .footer-parent{
-    background-color: color(secondary);
     height: 17rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
 }
+
+
+.fa-instagram {
+    background: color(secondary);
+    color: white;
+  }
+  
+  .fa-facebook {
+    background: color(secondary);
+    color: white;
+  }
+
+  .fa-twitter {
+    background: color(secondary);
+    color: white;
+  }  
+
+  .fa {
+    padding: 3rem;
+    font-size: 6rem;
+    width: 5rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    @include desktop{
+        width: 6rem;
+    }
+  }

@@ -671,8 +671,45 @@ header-image {
 }
 
 .footer-parent {
-  background-color: #bdd5da;
   height: 17rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fa-instagram {
+  background: #bdd5da;
+  color: white;
+}
+
+.fa-facebook {
+  background: #bdd5da;
+  color: white;
+}
+
+.fa-twitter {
+  background: #bdd5da;
+  color: white;
+}
+
+.fa {
+  padding: 3rem;
+  font-size: 6rem;
+  width: 5rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+@media (min-width: 1100px) {
+  .fa {
+    width: 6rem;
+  }
 }
 
 html {
