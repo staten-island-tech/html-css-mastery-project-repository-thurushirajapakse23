@@ -2,9 +2,27 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 0;
     @include desktop{
       flex-direction: row;
+      margin: 10rem;
     }
+}
+#sights{
+  display: flex;
+  justify-content: center;
+  font-family: 'Six Caps', sans-serif; 
+  font-size: 6rem;
+  letter-spacing: .3rem;
+  @include desktop{
+    font-size: 8rem;
+  letter-spacing: 1rem;
+  }
+  
+}
+#sights:hover{
+  background-color: color(secondary);
+  transition:  5;
 }
 .trevi-parent{
     position: relative;
@@ -25,6 +43,7 @@
     opacity: 0.2;
     transition: .5;
   }
+  
   
   .trevi-image:hover ~ .trevi-box{
     opacity: 1;
