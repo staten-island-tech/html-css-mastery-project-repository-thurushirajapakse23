@@ -731,6 +731,81 @@ header-image {
   }
 }
 
+.nav-box {
+  display: none;
+  position: fixed;
+  top: 3rem;
+  left: 3rem;
+}
+
+.nav-box:checked ~ .nav-label .nav-span {
+  background-color: transparent;
+}
+
+.nav-boxchecked ~ .nav-label .nav-span::before {
+  -webkit-transform: rotate(45 deg) translate(1px, -5px);
+          transform: rotate(45 deg) translate(1px, -5px);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.nav-boxchecked ~ .nav-label .nav-span::after {
+  -webkit-transform: rotate(45 deg) translate(1px, -5px);
+          transform: rotate(45 deg) translate(1px, -5px);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.nav-label {
+  position: fixed;
+  top: 3rem;
+  left: 3rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #b1c6ca;
+  -webkit-box-shadow: 0 0 1rem #b1c6ca, 0.8, 0 0 2rem #b1c6ca, 0.5, 0 0 3rem #77bac7ea, 0.8;
+          box-shadow: 0 0 1rem #b1c6ca, 0.8, 0 0 2rem #b1c6ca, 0.5, 0 0 3rem #77bac7ea, 0.8;
+  cursor: pointer;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-span {
+  width: 3.5rem;
+  height: .5rem;
+  background-color: white;
+  display: inline-block;
+  border-radius: 100px;
+  position: relative;
+}
+
+.nav-span::before .nav-span::after {
+  content: "";
+  width: 3.5rem;
+  height: .5rem;
+  background-color: white;
+  display: inline-block;
+  border-radius: 100px;
+  position: absolute;
+}
+
+.nav-span::before {
+  top: -1rem;
+}
+
+.nav-span::after {
+  bottom: -1rem;
+}
+
 html {
   padding: 0;
   margin: 0;

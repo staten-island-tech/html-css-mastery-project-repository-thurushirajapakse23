@@ -1,0 +1,65 @@
+@mixin set {
+    position: fixed;
+    top: 3rem;
+    left: 3rem;
+}
+.nav-box{
+    display: none;
+    @include set;
+    &:checked~ .nav-label .nav-span{
+        background-color: transparent;
+    }
+    &checked~ .nav-label .nav-span::before{
+        transform: rotate(45 deg) translate(1px, -5px);
+        transform-origin: left;
+        ;
+    }
+    &checked~ .nav-label .nav-span::after{
+        transform: rotate(45 deg) translate(1px, -5px);
+        transform-origin: left;
+        ;
+    }
+}
+
+.nav-label{
+    @include set;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color:$fifth-color;
+    box-shadow: 0 0 1rem ($fifth-color,.8), 
+                0 0 2rem ($fifth-color,.5), 
+                0 0 3rem ($second-color,.8);  
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-span{
+    width: 3.5rem;
+    height: .5rem;
+    background-color: white;
+    display: inline-block;
+    border-radius: 100px;
+    position: relative;
+    
+
+    &::before
+    &::after{
+        content: "";
+        width: 3.5rem;
+        height: .5rem;
+        background-color: white;
+        display: inline-block;
+        border-radius: 100px;
+        position: absolute;
+    }
+    &::before{
+        top: -1rem;
+    }
+    &::after{
+        bottom: -1rem;
+    }
+}
