@@ -1,35 +1,56 @@
+@import "./variables";
+$first-color: rgb(53, 108, 120);
+$second-color: rgb(96, 155, 167);
+$third-color: rgba(135, 200, 213, 0.776);
+$forth-color: rgba(202, 204, 205, 0.729);
+$fifth-color: rgb(173, 208, 215);
 @mixin set {
     position: fixed;
-    top: 3rem;
-    left: 3rem;
+    top: 2rem;
+    left: 2rem;
 }
 .nav-box{
     display: none;
     @include set;
-    &:checked~ .nav-label .nav-span{
+    &:checked ~ .nav-label .nav-span{
         background-color: transparent;
     }
-    &checked~ .nav-label .nav-span::before{
-        transform: rotate(45 deg) translate(1px, -5px);
+    &:checked ~ .nav-label .nav-span::before{
+        transform: rotate(45deg) translate(1px, -5px);
         transform-origin: left;
-        ;
+        
     }
-    &checked~ .nav-label .nav-span::after{
-        transform: rotate(45 deg) translate(1px, -5px);
+    &:checked ~ .nav-label .nav-span::after{
+        transform: rotate(-45deg) translate(2px , 4px);
         transform-origin: left;
-        ;
+    }
+    &:checked ~ .nav-back{
+        transform: scale(10);
+    }
+    &:not(:checked) ~  .nav-label:hover .nav-span::before{
+        top: -1.2rem;
+    }
+    &:not(:checked) ~  .nav-label:hover .nav-span::after{
+        bottom: -1.2rem;
+    }
+    &:checked ~ .nav-list{
+        padding: 4.9rem 0 0;
+        width: 30rem;
+        height: 30rem;
     }
 }
 
 .nav-label{
-    @include set;
-    width: 6rem;
-    height: 6rem;
+    top: 2rem;
+    left: 2rem;
+    position: fixed;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
-    background-color:$fifth-color;
-    box-shadow: 0 0 1rem ($fifth-color,.8), 
-                0 0 2rem ($fifth-color,.5), 
-                0 0 3rem ($second-color,.8);  
+    background-color: $fifth-color;
+    box-shadow: 0 0 1rem rgba($fifth-color, .8), 
+                0 0 2rem rgba($fifth-color, .5), 
+                0 0 3rem rgba($second-color, .8);  
     cursor: pointer;
     z-index: 10;
     display: flex;
@@ -45,7 +66,7 @@
     border-radius: 100px;
     position: relative;
     
-
+    
     &::before
     &::after{
         content: "";
@@ -55,6 +76,7 @@
         display: inline-block;
         border-radius: 100px;
         position: absolute;
+        transition: all .133s;
     }
     &::before{
         top: -1rem;
@@ -62,4 +84,47 @@
     &::after{
         bottom: -1rem;
     }
+}
+
+.nav-back{
+    @include set;
+    top: 4rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    z-index: 8;
+    background-image: radial-gradient(farthest-side at 60% 55%, $first-color, $second-color, $third-color, $forth-color);
+    transition: all .5s cubic-bezier(.17,.67,.58,1.7 );
+                                                                        
+}
+
+.nav-list{
+    top: 2rem;
+    left: 0rem;
+    position: fixed;
+    list-style: none;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+     transform: rotate(-30deg);
+     z-index: 9;
+     text-align: center;
+     transition: all .5s cubic-bezier(.17,.67,.58,1.7 );
+     font-size: 2rem;
+     font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.nav-item{
+    padding: rem;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    transition: al .2s ;
+    &:hover{
+        color: $first-color;
+    }
+
 }

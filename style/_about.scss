@@ -21,7 +21,12 @@
 .text-title{
   font-size: 7rem;
   background-color: color(secondary);
-   margin: 0;
+   margin-bottom: 3rem;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   font-family: 'Yanone Kaffeesatz', sans-serif;
 
 }
 

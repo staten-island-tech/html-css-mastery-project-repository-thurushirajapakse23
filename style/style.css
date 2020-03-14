@@ -98,25 +98,21 @@ header-image {
   }
 }
 
-@media (min-width: 1100px) {
-  .panth {
-    widows: 37rem;
-  }
-}
-
 #gallery {
-  height: 37vh;
+  height: 60vh;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 @media (min-width: 600px) {
   #gallery {
-    height: 50vh;
+    height: 56vh;
   }
 }
 
 @media (min-width: 1100px) {
   #gallery {
-    height: 65vh;
+    margin-bottom: 20rem;
   }
 }
 
@@ -361,8 +357,20 @@ header-image {
 
 .text-title {
   font-size: 7rem;
-  background-color: #bdd5da;
-  margin: 0;
+  background-color: #add0d7;
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .city-parent {
@@ -444,7 +452,7 @@ header-image {
 }
 
 #sights:hover {
-  background-color: #bdd5da;
+  background-color: #add0d7;
   -webkit-transition: 5;
   transition: 5;
 }
@@ -484,7 +492,7 @@ header-image {
 }
 
 .trevi-text {
-  background-color: #bdd5da;
+  background-color: #add0d7;
   color: black;
   font-size: 3rem;
   padding: 4px 32px;
@@ -544,7 +552,7 @@ header-image {
 }
 
 .vatican-text {
-  background-color: #bdd5da;
+  background-color: #add0d7;
   color: black;
   font-size: 3rem;
   padding: 4px 32px;
@@ -604,7 +612,7 @@ header-image {
 }
 
 .vatican-text {
-  background-color: #bdd5da;
+  background-color: #add0d7;
   color: black;
   font-size: 3rem;
   padding: 4px 32px;
@@ -664,7 +672,7 @@ header-image {
 }
 
 .peters-text {
-  background-color: #bdd5da;
+  background-color: #add0d7;
   color: black;
   font-size: 3rem;
   padding: 4px 32px;
@@ -702,17 +710,17 @@ header-image {
 }
 
 .fa-instagram {
-  background: #bdd5da;
+  background: #add0d7;
   color: white;
 }
 
 .fa-youtube {
-  background: #bdd5da;
+  background: #add0d7;
   color: white;
 }
 
 .fa-twitter {
-  background: #bdd5da;
+  background: #add0d7;
   color: white;
 }
 
@@ -734,38 +742,57 @@ header-image {
 .nav-box {
   display: none;
   position: fixed;
-  top: 3rem;
-  left: 3rem;
+  top: 2rem;
+  left: 2rem;
 }
 
 .nav-box:checked ~ .nav-label .nav-span {
   background-color: transparent;
 }
 
-.nav-boxchecked ~ .nav-label .nav-span::before {
-  -webkit-transform: rotate(45 deg) translate(1px, -5px);
-          transform: rotate(45 deg) translate(1px, -5px);
+.nav-box:checked ~ .nav-label .nav-span::before {
+  -webkit-transform: rotate(45deg) translate(1px, -5px);
+          transform: rotate(45deg) translate(1px, -5px);
   -webkit-transform-origin: left;
           transform-origin: left;
 }
 
-.nav-boxchecked ~ .nav-label .nav-span::after {
-  -webkit-transform: rotate(45 deg) translate(1px, -5px);
-          transform: rotate(45 deg) translate(1px, -5px);
+.nav-box:checked ~ .nav-label .nav-span::after {
+  -webkit-transform: rotate(-45deg) translate(2px, 4px);
+          transform: rotate(-45deg) translate(2px, 4px);
   -webkit-transform-origin: left;
           transform-origin: left;
+}
+
+.nav-box:checked ~ .nav-back {
+  -webkit-transform: scale(10);
+          transform: scale(10);
+}
+
+.nav-box:not(:checked) ~ .nav-label:hover .nav-span::before {
+  top: -1.2rem;
+}
+
+.nav-box:not(:checked) ~ .nav-label:hover .nav-span::after {
+  bottom: -1.2rem;
+}
+
+.nav-box:checked ~ .nav-list {
+  padding: 4.9rem 0 0;
+  width: 30rem;
+  height: 30rem;
 }
 
 .nav-label {
+  top: 2rem;
+  left: 2rem;
   position: fixed;
-  top: 3rem;
-  left: 3rem;
-  width: 6rem;
-  height: 6rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
-  background-color: #b1c6ca;
-  -webkit-box-shadow: 0 0 1rem #b1c6ca, 0.8, 0 0 2rem #b1c6ca, 0.5, 0 0 3rem #77bac7ea, 0.8;
-          box-shadow: 0 0 1rem #b1c6ca, 0.8, 0 0 2rem #b1c6ca, 0.5, 0 0 3rem #77bac7ea, 0.8;
+  background-color: #add0d7;
+  -webkit-box-shadow: 0 0 1rem rgba(173, 208, 215, 0.8), 0 0 2rem rgba(173, 208, 215, 0.5), 0 0 3rem rgba(96, 155, 167, 0.8);
+          box-shadow: 0 0 1rem rgba(173, 208, 215, 0.8), 0 0 2rem rgba(173, 208, 215, 0.5), 0 0 3rem rgba(96, 155, 167, 0.8);
   cursor: pointer;
   z-index: 10;
   display: -webkit-box;
@@ -796,6 +823,8 @@ header-image {
   display: inline-block;
   border-radius: 100px;
   position: absolute;
+  -webkit-transition: all .133s;
+  transition: all .133s;
 }
 
 .nav-span::before {
@@ -804,6 +833,54 @@ header-image {
 
 .nav-span::after {
   bottom: -1rem;
+}
+
+.nav-back {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  top: 4rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  z-index: 8;
+  background-image: radial-gradient(farthest-side at 60% 55%, #356c78, #609ba7, rgba(135, 200, 213, 0.776), rgba(202, 204, 205, 0.729));
+  -webkit-transition: all 0.5s cubic-bezier(0.17, 0.67, 0.58, 1.7);
+  transition: all 0.5s cubic-bezier(0.17, 0.67, 0.58, 1.7);
+}
+
+.nav-list {
+  top: 2rem;
+  left: 0rem;
+  position: fixed;
+  list-style: none;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  z-index: 9;
+  text-align: center;
+  -webkit-transition: all 0.5s cubic-bezier(0.17, 0.67, 0.58, 1.7);
+  transition: all 0.5s cubic-bezier(0.17, 0.67, 0.58, 1.7);
+  font-size: 2rem;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.nav-item {
+  padding: rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: al .2s;
+  transition: al .2s;
+}
+
+.nav-link:hover {
+  color: #356c78;
 }
 
 html {
